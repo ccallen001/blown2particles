@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+
+  * {
+    box-sizing: border-box;
+
+    position: relative;
+
+    margin: 0;
+    padding: 0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    list-style-type: none;
+
+    text-align: center;
+    text-decoration: none;
+
+    // border: 1px solid black;
+  }
+}
