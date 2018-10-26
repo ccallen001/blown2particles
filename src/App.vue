@@ -57,10 +57,15 @@ export default {
     }
 
     h1 {
+      left: -6px;
       font-family: $rockSalt;
       font-size: $fontSizeBig;
       letter-spacing: 1px;
       text-shadow: 0 4px 0 black, 0 1px 24px $black;
+
+      @media screen and (max-width: $widthMobile) {
+        font-size: $fontSizeMed;
+      }
     }
   }
 
@@ -75,6 +80,11 @@ export default {
       color: $white;
       font-size: $fontSizeMed;
       font-weight: bold;
+
+      @media screen and (max-width: $widthMobile) {
+        padding: 20px 0 22px;
+        font-size: $fontSizeSmall;
+      }
 
       &.activeView {
         text-shadow: 0 1px 0 brown, 0 1px 24px $white;
