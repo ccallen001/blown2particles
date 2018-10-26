@@ -102,6 +102,10 @@ export default {
           border-radius: 32px;
         }
       }
+
+      &:hover {
+        text-shadow: 0 1px 0 brown, 0 1px 24px $white;
+      }
     }
   }
 }
