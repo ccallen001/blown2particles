@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="app-background-image"></div>
     <header>
       <!-- the bubbles as backgroung image -->
       <div class="header-background-image"></div>
@@ -33,8 +34,21 @@ export default {
 @import "./styles/helpers";
 @import "./styles/variables";
 
+// app level styles
 #app {
+  height: 100%;
   font-family: $roboto;
+  background-color: $black;
+
+  .app-background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("./assets/images/tiny-matt.jpg");
+    opacity: 0.1;
+  }
 
   header {
     padding-top: 6px;
