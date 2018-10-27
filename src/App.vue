@@ -58,7 +58,7 @@ export default {
     color: $white;
     text-shadow: 0 2px 0 black, 0 1px 16px $black;
     border: 2px solid $black;
-    border-bottom-width: 8px;
+    border-bottom-width: 4px;
 
     // the bubbles
     .header-background-image {
@@ -87,7 +87,7 @@ export default {
     background: url("./assets/images/black-paisley-background.jpg") no-repeat
       center / cover;
     background-color: $black;
-    border-bottom: 6px solid $black;
+    border-bottom: 3px solid $black;
 
     a {
       padding: 32px 0 36px;

@@ -24,7 +24,7 @@ export default {
 <style lang="scss">
 .view-home {
   .img-matt {
-    width: 100%;
+    height: 100%;
     filter: hue-rotate(0);
 
     &:hover {

@@ -25,3 +25,13 @@ html {
     }
   }
 }
+
+// all views get a height of 100%;
+[class*="view-"] {
+  height: 50%; // y tho?
+}
+
+// all components
+[class*="component-"] {
+  height: initial; // just a placeholder for now
+}
