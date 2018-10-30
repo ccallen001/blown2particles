@@ -5,7 +5,7 @@
       <!-- the bubbles as backgroung image -->
       <div class="header-background-image"></div>
       <h1>Matt Leavitt</h1>
-      <h2>Multi Media Artist</h2>
+      <h2>Multi-Media Artist</h2>
     </header>
     <div id="nav" class="flex-container justify-center">
       <router-link to="/" :class="{ activeView: activeView === 'home' }">Home</router-link>
@@ -13,7 +13,37 @@
       <router-link to="/about" :class="{ activeView: activeView === 'about' }">About</router-link>
       <router-link to="/contact" :class="{ activeView: activeView === 'contact' }">Contact</router-link>
     </div>
-    <router-view/>
+    <router-view></router-view>
+    <footer class="flex-container">
+      <div class="footer-container-left">
+        <h3 class="matt-name">Matt Leavitt</h3>
+        <h4>Multi-Media Artist</h4>
+      </div>
+      <div class="footer-container-right">
+        <h3>Reach Out:</h3>
+        <ul class="flex-container">
+          <li>
+            <a href="https://www.facebook.com/blown2particles" target="_new">
+              <img src="./assets/images/icons/facebook.png" class="footer-icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/mattleavittvfx" target="_new">
+              <img src="./assets/images/icons/linkedin.png" class="footer-icon">
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/blown2particles" target="_new">
+              <img src="./assets/images/icons/youtube.png" class="footer-icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- preload assets here -->
+    <div class="asset-preload">
+      <img src="./assets/images/matt-head.jpg">
+    </div>
   </div>
 </template>
 
@@ -87,10 +117,10 @@ export default {
     background: url("./assets/images/black-paisley-background.jpg") no-repeat
       center / cover;
     background-color: $black;
-    border-bottom: 3px solid $black;
+    border-bottom: 2px solid black;
 
     a {
-      padding: 32px 0 36px;
+      padding: 28px 0 30px;
       color: $white;
       font-size: $fontSizeMed;
       font-weight: bold;
@@ -120,6 +150,62 @@ export default {
       &:hover {
         text-shadow: 0 1px 0 brown, 0 1px 24px $white;
       }
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, $black 25%, $white 90%, brown);
+    color: $white;
+    border-top: 2px solid black;
+
+    .footer-container-left {
+      .matt-name {
+        top: -10px;
+        margin-bottom: -13px;
+        font-family: $rockSalt;
+        font-size: 26px;
+        letter-spacing: 1px;
+        text-shadow: 0 1px 1px black, 0 1px 16px $black;
+
+        @media screen and (max-width: $widthMobile) {
+          top: -8px;
+          margin-bottom: 0;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .footer-container-right {
+      h3 {
+        margin-bottom: 12px;
+        text-shadow: 0 2px 1px $black;
+      }
+
+      .footer-icon {
+        height: 32px;
+        filter: drop-shadow(0 1px 12px $black);
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .asset-preload {
+    display: none;
+    width: 0;
+    height: 0;
+
+    * {
+      display: none;
+      width: 0;
+      height: 0;
     }
   }
 }

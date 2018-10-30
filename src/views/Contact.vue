@@ -1,5 +1,5 @@
 <template>
-	<div class="view-contact flex-container col justify-center align-center">
+	<div class="view-contact flex-container col align-center">
 		<contact-widget></contact-widget>
 	</div>
 </template>

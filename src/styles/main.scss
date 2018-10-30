@@ -4,23 +4,29 @@ html {
   body {
     margin: 0;
     height: 100%;
-  
+    overflow: hidden;
+
     * {
       box-sizing: border-box;
-  
+
       position: relative;
-  
+
       margin: 0;
       padding: 0;
-  
+
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
-  
+
       list-style-type: none;
-  
+
       text-align: center;
       text-decoration: none;
-  
+
+      &::selection {
+        // doesn't seem to work on mobile...
+        background: none;
+      }
+
       // border: 1px solid black;
     }
   }
