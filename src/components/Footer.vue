@@ -1,5 +1,5 @@
 <template>
-    <footer>footer</footer>
+    <footer class="component-footer">footer</footer>
 </template>
 
 <script>
@@ -9,4 +9,7 @@ export default {
 </script>
 
 <style lang="scss">
+.component-footer {
+    
+}
 </style>

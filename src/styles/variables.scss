@@ -1,8 +1,15 @@
 // colors
 
 $black: #111;
+$orange: #de5021;
 $white: whitesmoke;
 
 // sizes
 
+$widthContent: 80vw; // this is the width for the nav bar and main view area
 $widthMobile: 500px;
+
+// text effects
+
+$textShadow: 1px 2px 4px;
+$textShadowBlack: 1px 2px 4px $black;

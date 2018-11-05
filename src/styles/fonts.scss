@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
 // families
 
+$orbitron: orbitron, sans-serif;
 $roboto: roboto, tahomoa;
 $rockSalt: rock salt, cursive;
 
 // sizes
 
+$fontSizeHuge: 64px;
 $fontSizeBig: 40px;
 $fontSizeMed: 32px;
 $fontSizeSmall: 20px;

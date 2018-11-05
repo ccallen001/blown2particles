@@ -1,6 +1,6 @@
 <template>
 	<div class="view-contact">
-		
+		contact
 	</div>
 </template>
 

@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <Nav/>
-    <router-view></router-view>
+    <router-view class="router-view"></router-view>
     <Footer/>
   </div>
 </template>
@@ -22,17 +22,22 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./styles/main";
+@import "./styles/main.scss";
 
-@import "./styles/fonts";
-@import "./styles/helpers";
-@import "./styles/variables";
+@import "./styles/fonts.scss";
+@import "./styles/helpers.scss";
+@import "./styles/variables.scss";
 
 // app level styles
 #app {
   height: 100%;
-  font-family: $roboto;
+  font-family: $orbitron;
   background-color: $black;
   color: $white;
+
+  .router-view {
+    width: $widthContent;
+    border: 1px solid;
+  }
 }
 </style>

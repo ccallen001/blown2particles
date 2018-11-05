@@ -1,4 +1,8 @@
-.flex-container {
+.block {
+  display: block !important;
+}
+
+.container-flex {
   display: flex;
 
   &.col {
@@ -16,4 +20,20 @@
   > * {
     flex: 1;
   }
+}
+
+.container-inline {
+  width: auto;
+
+  > * {
+    display: inline-block;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
