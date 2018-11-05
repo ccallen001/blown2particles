@@ -1,20 +1,15 @@
 <template>
-	<div class="view-contact flex-container col align-center">
-		<contact-widget></contact-widget>
+	<div class="view-contact">
+		
 	</div>
 </template>
 
 <script>
-import contactWidget from "../components/contactWidget";
-
 export default {
-  name: "contact",
-  components: {
-    contactWidget
-  }
+  name: "contact"
 };
 </script>
 
 <style>
-@import "../styles/helpers.scss";
+.view-contact {}
 </style>

@@ -1,6 +1,6 @@
 <template>
 	<div class="view-about">
-		<h2>About</h2>
+		<h2>about</h2>
 	</div>
 </template>
 
@@ -9,3 +9,8 @@ export default {
   name: "about"
 };
 </script>
+
+<style lang="scss">
+.view-about {}
+</style>
+
