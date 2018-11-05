@@ -1,6 +1,6 @@
 <template>
 	<div class="view-contact">
-		contact
+		<h1 class="contact">Contact</h1>
 	</div>
 </template>
 
@@ -11,5 +11,6 @@ export default {
 </script>
 
 <style>
-.view-contact {}
+.view-contact {
+}
 </style>

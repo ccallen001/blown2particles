@@ -35,8 +35,13 @@ export default {
   background-color: $black;
   color: $white;
 
+  a {
+    color: $white;
+  }
+
   .router-view {
     width: $widthContent;
+    background-color: $gray-light;
   }
 }
 </style>

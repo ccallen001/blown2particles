@@ -1,7 +1,7 @@
 <template>
-	<div class="view-about">
-		about
-	</div>
+  <div class="view-about">
+    <h1 class="about"></h1>
+  </div>
 </template>
 
 <script>
@@ -11,6 +11,6 @@ export default {
 </script>
 
 <style lang="scss">
-.view-about {}
+.view-about {
+}
 </style>
-

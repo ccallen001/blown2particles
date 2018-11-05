@@ -1,28 +1,28 @@
 <template>
-    <nav class="component-nav">
-        <ul class="container-flex margin-auto">
-            <li>
-                <router-link to="/" :class="{ selected: route === 'home' }">Home</router-link>
-            </li>
-            <li>
-                <router-link to="/services" :class="{ selected: route === 'services' }">Services</router-link>
-            </li>
-            <li>
-                <router-link to="/about" :class="{ selected: route === 'about' }">About</router-link>
-            </li>
-            <li>
-                <router-link to="/contact" :class="{ selected: route === 'contact' }">Contact</router-link>
-            </li>
-        </ul>
-    </nav>
+  <nav class="component-nav">
+    <ul class="container-flex margin-auto">
+      <li>
+        <router-link to="/" :class="{ selected: route === 'home' }">Home</router-link>
+      </li>
+      <li>
+        <router-link to="/services" :class="{ selected: route === 'services' }">Services</router-link>
+      </li>
+      <li>
+        <router-link to="/about" :class="{ selected: route === 'about' }">About</router-link>
+      </li>
+      <li>
+        <router-link to="/contact" :class="{ selected: route === 'contact' }">Contact</router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script>
 export default {
-  name: "nav",
+  name: "nav-component",
   computed: {
     route() {
-        return this.$route.name;
+      return this.$route.name;
     }
   }
 };
@@ -43,6 +43,7 @@ export default {
 }
 
 .component-nav {
+  padding-bottom: 22px;
   background-color: $black;
 
   ul {
@@ -59,13 +60,13 @@ export default {
           cursor: pointer;
 
           &::before {
-              @include hoverSelected;
+            @include hoverSelected;
           }
         }
 
         &.selected {
           &::before {
-              @include hoverSelected;
+            @include hoverSelected;
           }
         }
       }

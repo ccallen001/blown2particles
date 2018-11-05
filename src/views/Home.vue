@@ -1,6 +1,6 @@
 <template>
   <div class="view-home">
-    home
+    <h1 class="title">Home</h1>
   </div>
 </template>
 
@@ -11,5 +11,6 @@ export default {
 </script>
 
 <style lang="scss">
-.view-home {}
+.view-home {
+}
 </style>

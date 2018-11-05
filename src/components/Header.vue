@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "header"
+  name: "header-component"
 };
 </script>
 
@@ -21,7 +21,7 @@ export default {
 @import "../styles/variables.scss";
 
 .component-header {
-  padding: 24px 0 48px;
+  padding: 8px 0 42px;
   background: linear-gradient($gray, $black);
 
   .title-header {
