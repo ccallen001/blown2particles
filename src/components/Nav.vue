@@ -1,6 +1,6 @@
 <template>
     <nav class="component-nav">
-        <ul class="container-flex">
+        <ul class="container-flex margin-auto">
             <li>
                 <router-link to="/" :class="{ selected: route === 'home' }">Home</router-link>
             </li>
@@ -47,7 +47,7 @@ export default {
 
   ul {
     width: $widthContent;
-    
+
     li {
       // the router links
       a {

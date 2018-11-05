@@ -22,22 +22,22 @@ export default {
 
 .component-header {
   padding: 24px 0 48px;
-  background: linear-gradient(#666, $black);
+  background: linear-gradient($gray, $black);
 
   .title-header {
-    margin-bottom: -24px;
+    margin-bottom: -32px;
     color: $orange;
     font-family: $rockSalt;
     font-size: $fontSizeHuge;
     letter-spacing: -2px;
-    text-shadow: 0 2px 0 black, $textShadowBlack;
+    text-shadow: 0 4px 0 black, $textShadowBlack;
   }
 
   .sub-title-header {
     padding-right: 16px;
     font-size: $fontSizeMed;
     letter-spacing: 6px;
-    text-shadow: $textShadowBlack;
+    text-shadow: 0 3px 0 black, $textShadowBlack;
   }
 
   .img-bomb {

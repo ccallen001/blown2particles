@@ -9,8 +9,16 @@
     flex-direction: column;
   }
 
+  &.justify-between {
+    justify-content: space-between;
+  }
+
   &.justify-center {
     justify-content: center;
+  }
+
+  &.align-end {
+    align-items: flex-end;
   }
 
   &.align-center {
@@ -22,6 +30,10 @@
   }
 }
 
+.flex-2 {
+  flex: 2;
+}
+
 .container-inline {
   width: auto;
 
@@ -30,10 +42,20 @@
   }
 }
 
-.text-center {
-  text-align: center;
+.margin-auto {
+  margin: 0 auto !important;
 }
 
-.text-right {
-  text-align: right;
+.width-100 {
+  width: 100%;
+}
+
+.text-left,
+.text-left * {
+  text-align: left !important;
+}
+
+.text-right,
+.text-right * {
+  text-align: right !important;
 }

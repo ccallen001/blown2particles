@@ -2,7 +2,7 @@
   <div id="app">
     <Header/>
     <Nav/>
-    <router-view class="router-view"></router-view>
+    <router-view class="router-view margin-auto"></router-view>
     <Footer/>
   </div>
 </template>
@@ -37,7 +37,6 @@ export default {
 
   .router-view {
     width: $widthContent;
-    border: 1px solid;
   }
 }
 </style>
