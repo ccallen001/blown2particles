@@ -58,6 +58,10 @@ a {
 @media screen and (max-width: $breakpointMobile) {
   .router-view {
     width: 100vw;
+
+    .title {
+      padding-top: 3px;
+    }
   }
 }
 </style>
