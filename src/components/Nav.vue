@@ -43,7 +43,8 @@ export default {
 }
 
 .component-nav {
-  padding-bottom: 22px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   background-color: $black;
 
   ul {
@@ -52,7 +53,7 @@ export default {
     li {
       // the router links
       a {
-        padding-top: 8px;
+        padding-top: 15px;
         color: $white;
         font-size: $fontSizeSmall;
 
@@ -78,11 +79,15 @@ export default {
 
 @media screen and (max-width: $breakpointMobile) {
   .component-nav {
+    padding: 8px 0 8px;
+
     ul {
       width: 100vw;
 
       li {
         a {
+          left: -4px;
+          padding-top: 14px;
           font-size: $fontSizeTiny;
         }
       }

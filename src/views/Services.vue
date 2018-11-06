@@ -3,22 +3,32 @@
     <h1 class="title">Services</h1>
     <section class="services-overview">
       <h2 class="section-title">Overview</h2>
-      <div class="flex-container">
+      <div class="container-flex">
         <div class="flex-2">
-          <p>Blown2Particles is a small freelance business that specializes in producing high-quality, concept through launch video products for businesses who are new to video marketing or working on a smaller budget. All Services Customizable & Include: Motion Graphics Animation, 3D Logos & Animation, or Promotional Material for your Business or Sales Videos for a Product.</p>
+          <p
+            class="content-services"
+          >Blown2Particles is a small freelance business that specializes in producing high-quality, concept through launch video products for businesses who are new to video marketing or working on a smaller budget. All Services Customizable & Include: Motion Graphics Animation, 3D Logos & Animation, or Promotional Material for your Business or Sales Videos for a Product.</p>
         </div>
-        <div></div>
+        <div class="black-and-white-bomb">
+          <!-- black and white bomb image as background here -->
+        </div>
       </div>
     </section>
     <section class="services-mission">
       <h2 class="section-title">Mission</h2>
-      <p>Our mission is to provide your business with the digital tools for success not only for today, but tomorrow & beyond.</p>
+      <p
+        class="content-services mission"
+      >Our mission is to provide your business with the digital tools for success not only for today, but tomorrow & beyond.</p>
     </section>
-    <section class="services-offered">
+    <section class="services-services-offered">
       <h2 class="section-title">Services Offered</h2>
       <div class="grid container-flex">
-        <div class="grid-col" v-for="gridCol in servicesOfferedGrid" :key="gridCol.title">
-          <div class="grid-item" v-for="gridItem in gridCol.gridItems" :key="gridItem.title">
+        <div class="grid-col container-flex col" v-for="gridCol in servicesOfferedGrid" :key="gridCol.title">
+          <div
+            class="grid-item content-services flex-auto"
+            v-for="gridItem in gridCol.gridItems"
+            :key="gridItem.title"
+          >
             <h4 class="grid-item-title">{{gridItem.title}}</h4>
             <p class="grid-item-content">{{gridItem.content}}</p>
             <router-link
@@ -120,6 +130,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../styles/fonts.scss";
 @import "../styles/variables.scss";
 
 .view-services {
@@ -127,11 +138,81 @@ export default {
     background-color: $gray-dark;
   }
 
-  .section-title {
-    background-color: $gray;
+  section {
+    .section-title {
+      background-color: $gray;
+      padding-top: 1px;
+      padding-bottom: 3px;
+    }
+
+    .content-services {
+      padding: 8px;
+    }
   }
 
-  .services-offered {
+  .services-overview {
+    .black-and-white-bomb {
+      background: url("../assets/images/black-and-white-bomb.png") no-repeat
+        center / cover;
+    }
+  }
+
+  .services-mission {
+    .content-services {
+      padding: 16px;
+      background-color: $black;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+  }
+
+  .services-services-offered {
+    letter-spacing: 1px;
+
+    .grid-col {
+      // 100vw / number of grid-cols
+      max-width: 25vw;
+
+      &:nth-child(even) {
+        .grid-item {
+          &:nth-child(even) {
+            background-color: $orange;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        .grid-item {
+          &:nth-child(odd) {
+            background-color: $orange;
+          }
+        }
+      }
+
+      .grid-item {
+        padding-bottom: 12px;
+        // border: 1px solid $gray-dark;
+
+        .grid-item-title {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+// mobile
+
+@media screen and (max-width: $breakpointMobile) {
+  .view-services {
+    font-size: $fontSizeTiny;
+
+    .services-services-offered {
+      .grid-item-title,
+      .grid-item-content {
+        font-size: 9px;
+        word-break: break-all;
+      }
+    }
   }
 }
 </style>

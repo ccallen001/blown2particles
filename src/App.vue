@@ -44,6 +44,13 @@ a {
 .router-view {
   width: $widthContent;
   background-color: $gray-light;
+
+  .title {
+    padding-top: 1px;
+    padding-bottom: 4px;
+    background-color: $gray-dark;
+    font-size: $fontSizeSmall + 4;
+  }
 }
 
 // mobile

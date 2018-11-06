@@ -1,5 +1,6 @@
 <template>
   <header class="component-header">
+    <div class="background"></div>
     <div class="container-inline">
       <div class="container-inline text-right">
         <h2 class="title-header block">Matt Leavitt</h2>
@@ -23,6 +24,16 @@ export default {
 .component-header {
   padding: 8px 0 42px;
   background: linear-gradient($gray, $black);
+
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/black-splatter.png") no-repeat center /
+      cover;
+  }
 
   .title-header {
     margin-bottom: -32px;
@@ -51,13 +62,13 @@ export default {
 
 @media screen and (max-width: $breakpointMobile) {
   .component-header {
-    padding-bottom: 22px;
+    padding-bottom: 30px;
 
     .title-header {
-      left: -8px;
+      left: -6px;
       margin-bottom: -12px;
       font-size: $fontSizeMed;
-      letter-spacing: 0;
+      letter-spacing: 1px;
       text-shadow: 0 4px 0 black, $textShadowBlack;
     }
 
@@ -68,7 +79,7 @@ export default {
     }
 
     .img-bomb {
-      top: 10px;
+      top: 14px;
       padding: 0 8px;
       width: 100px;
     }

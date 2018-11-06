@@ -125,6 +125,8 @@ export default {
 
 @media screen and (max-width: $breakpointMobile) {
   .component-footer {
+    padding-top: 8px;
+
     .container-content {
       width: 100vw;
 
@@ -142,7 +144,12 @@ export default {
         }
 
         .follow {
+          .title-footer {
+            margin-top: -8px;
+          }
+
           a {
+            margin: -8px;
             text-align: center !important;
 
             img {
