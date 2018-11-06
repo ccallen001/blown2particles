@@ -81,9 +81,6 @@ export default {
       letter-spacing: 1px;
     }
 
-    .about {
-    }
-
     .follow {
       a {
         // push the icons down a bit
@@ -100,11 +97,11 @@ export default {
       }
     }
 
-    .get-in-touch {
-      // a:hover {
-      //   filter: drop-shadow(0 1px 4px $orange);
-      // }
-    }
+    // .get-in-touch {
+    //   a:hover {
+    //     filter: drop-shadow(0 1px 4px $orange);
+    //   }
+    // }
 
     .title-footer {
       margin-bottom: 8px;
@@ -121,6 +118,49 @@ export default {
     padding: 8px 0;
     background: radial-gradient($gray-light, $gray);
     font-size: $fontSizeTiny;
+  }
+}
+
+// mobile
+
+@media screen and (max-width: $breakpointMobile) {
+  .component-footer {
+    .container-content {
+      width: 100vw;
+
+      > .container-flex {
+        flex-direction: column;
+
+        .about,
+        .follow,
+        .get-in-touch {
+          padding: 0 8px;
+
+          &:not(:last-child) {
+            margin-bottom: 16px;
+          }
+        }
+
+        .follow {
+          a {
+            text-align: center !important;
+
+            img {
+              width: 32px;
+            }
+          }
+        }
+
+        .title-footer {
+          margin-bottom: 8px;
+          color: $gray-light;
+        }
+
+        .content-footer {
+          font-size: 8px;
+        }
+      }
+    }
   }
 }
 </style>

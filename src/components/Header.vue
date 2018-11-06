@@ -46,4 +46,32 @@ export default {
     width: 212px;
   }
 }
+
+// mobile
+
+@media screen and (max-width: $breakpointMobile) {
+  .component-header {
+    padding-bottom: 22px;
+
+    .title-header {
+      left: -8px;
+      margin-bottom: -12px;
+      font-size: $fontSizeMed;
+      letter-spacing: 0;
+      text-shadow: 0 4px 0 black, $textShadowBlack;
+    }
+
+    .sub-title-header {
+      padding-right: 0;
+      font-size: $fontSizeSmall;
+      letter-spacing: 4px;
+    }
+
+    .img-bomb {
+      top: 10px;
+      padding: 0 8px;
+      width: 100px;
+    }
+  }
+}
 </style>

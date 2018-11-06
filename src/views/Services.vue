@@ -123,7 +123,10 @@ export default {
 @import "../styles/variables.scss";
 
 .view-services {
-  .title,
+  .title {
+    background-color: $gray-dark;
+  }
+
   .section-title {
     background-color: $gray;
   }

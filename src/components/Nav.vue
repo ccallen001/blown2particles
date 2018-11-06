@@ -73,4 +73,20 @@ export default {
     }
   }
 }
+
+// mobile
+
+@media screen and (max-width: $breakpointMobile) {
+  .component-nav {
+    ul {
+      width: 100vw;
+
+      li {
+        a {
+          font-size: $fontSizeTiny;
+        }
+      }
+    }
+  }
+}
 </style>

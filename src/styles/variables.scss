@@ -1,15 +1,19 @@
+// media breakpoints
+
+$breakpointMobile: 590px;
+
 // colors
 
 $black: #111;
 $gray: #666;
+$gray-dark: #333;
 $gray-light: #999;
 $orange: #de5021;
 $white: whitesmoke;
 
 // sizes
 
-$widthContent: 80vw; // this is the width for the nav bar and main view area
-$widthMobile: 500px;
+$widthContent: 80vw; // this is the width for the nav bar and main view (router-view) area
 
 // text effects
 

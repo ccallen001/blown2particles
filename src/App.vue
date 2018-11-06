@@ -29,19 +29,28 @@ export default {
 @import "./styles/variables.scss";
 
 // app level styles
+
 #app {
   height: 100%;
   font-family: $orbitron;
   background-color: $black;
   color: $white;
+}
 
-  a {
-    color: $white;
-  }
+a {
+  color: $white;
+}
 
+.router-view {
+  width: $widthContent;
+  background-color: $gray-light;
+}
+
+// mobile
+
+@media screen and (max-width: $breakpointMobile) {
   .router-view {
-    width: $widthContent;
-    background-color: $gray-light;
+    width: 100vw;
   }
 }
 </style>
