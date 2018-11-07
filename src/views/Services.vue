@@ -23,7 +23,11 @@
     <section class="services-services-offered">
       <h2 class="section-title">Services Offered</h2>
       <div class="grid container-flex">
-        <div class="grid-col container-flex col" v-for="gridCol in servicesOfferedGrid" :key="gridCol.title">
+        <div
+          class="grid-col container-flex col"
+          v-for="gridCol in servicesOfferedGrid"
+          :key="gridCol.title"
+        >
           <div
             class="grid-item content-services flex-auto"
             v-for="gridItem in gridCol.gridItems"
@@ -205,6 +209,14 @@ export default {
 @media screen and (max-width: $breakpointMobile) {
   .view-services {
     font-size: $fontSizeTiny;
+
+    section {
+      .section-title {
+        background-color: $gray;
+        padding-top: 3px;
+        padding-bottom: 3px;
+      }
+    }
 
     .services-services-offered {
       .grid-item-title,
