@@ -32,20 +32,21 @@ export default {
 @import "../styles/fonts.scss";
 @import "../styles/variables.scss";
 
+// for the nav view indicator... the orange bar over the nav links
 @mixin hoverSelected {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px;
+  height: 6px;
   background-color: $orange;
 }
 
 .component-nav {
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 16px;
-  background-color: $black;
+  background: radial-gradient($black, black);
 
   ul {
     width: $widthContent;
@@ -53,7 +54,7 @@ export default {
     li {
       // the router links
       a {
-        padding-top: 15px;
+        padding-top: 17px;
         color: $white;
         font-size: $fontSizeSmall;
 
