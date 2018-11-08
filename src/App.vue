@@ -33,6 +33,7 @@ export default {
 #app {
   height: 100%;
   font-family: $orbitron;
+  background: url("./assets/images/circuit-board.jpg") no-repeat center / cover;
   background-color: $black;
   color: $white;
 }
