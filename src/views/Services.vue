@@ -144,7 +144,7 @@ export default {
 
   section {
     .section-title {
-      background-color: $gray;
+      background: radial-gradient($gray-light, $gray);
       padding-top: 1px;
       padding-bottom: 3px;
     }
@@ -213,8 +213,8 @@ export default {
     section {
       .section-title {
         background-color: $gray;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        padding-top: 6px;
+        padding-bottom: 8px;
       }
     }
 

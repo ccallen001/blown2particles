@@ -45,11 +45,12 @@ a {
 .router-view {
   width: $widthContent;
   background-color: $gray-light;
+  filter: drop-shadow(0 0 16px $black);
 
   .title {
-    padding-top: 1px;
-    padding-bottom: 4px;
-    background-color: $gray-dark;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    background: radial-gradient($gray-dark, $black);
     font-size: $fontSizeSmall + 4;
   }
 }
@@ -61,7 +62,7 @@ a {
     width: 100vw;
 
     .title {
-      padding-top: 3px;
+      padding-top: 8px;
     }
   }
 }
