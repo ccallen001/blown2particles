@@ -35,5 +35,39 @@
 
     <!-- built files will be auto injected in the #app div below -->
     <div id="app"></div>
+
+    <!-- the bomb animation upon landing -->
+    <style>
+      .boom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99999999999999;
+        width: 100vw;
+        height: 100vh;
+        background: url("./boom.gif") no-repeat center / contain;
+        background-color: black;
+        transition: opacity 500ms ease-out;
+      }
+    </style>
+
+    <script>
+      if (!sessionStorage.getItem("visitorHasSeenBoom")) {
+        const boom = document.createElement("DIV");
+        boom.className = "boom";
+
+        document.body.appendChild(boom);
+
+        setTimeout(() => {
+          boom.style.backgroundSize = "cover";
+          boom.style.opacity = 0;
+          setTimeout(() => {
+            document.body.removeChild(boom);
+          }, 1001);
+        }, 12000);
+
+        sessionStorage.setItem("visitorHasSeenBoom", true);
+      }
+    </script>
   </body>
 </html>
