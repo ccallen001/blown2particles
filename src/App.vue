@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <div class="boom" ref="boom"></div>
     <Header/>
     <Nav/>
     <router-view class="router-view margin-auto"></router-view>
@@ -17,6 +18,19 @@ export default {
     Header,
     Nav,
     Footer
+  },
+  mounted() {
+    const boom = this.$refs.boom;
+    boom.fadeTime = 3000;
+
+    boom.style.transition = `opacity ${boom.fadeTime}ms ease-out`;
+    setTimeout(() => {
+      boom.style.opacity = 0;
+
+      setTimeout(() => {
+        boom.parentElement.removeChild(boom);
+      }, boom.fadeTime);
+    }, 12000);
   }
 };
 </script>
@@ -36,6 +50,17 @@ export default {
   background: url("./assets/images/circuit-board.jpg") no-repeat center / cover;
   background-color: $black;
   color: $white;
+
+  .boom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999999999999999999999;
+    width: 100vw;
+    height: 100vh;
+    background: url("./assets/images/boom.gif") no-repeat center / cover;
+    background-position: -78px 0;
+  }
 }
 
 a {
