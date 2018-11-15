@@ -55,11 +55,11 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 99999999999999999999999;
+    z-index: 99999999999999999999999 !important;
     width: 100vw;
     height: 100vh;
     background: url("./assets/images/boom.gif") no-repeat center / cover;
-    background-position: -78px 0;
+    background-position: -82px 0;
   }
 }
 
