@@ -116,7 +116,6 @@ export default {
   .copyright {
     margin-top: 12px;
     padding: 8px 0;
-    background: radial-gradient($gray-light, $gray);
     font-size: $fontSizeTiny;
   }
 }

@@ -1,6 +1,9 @@
+@import './variables';
+
 html {
   body {
     margin: 0;
+    background-color: $black;
 
     * {
       box-sizing: border-box;
